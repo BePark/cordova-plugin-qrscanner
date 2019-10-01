@@ -8,6 +8,7 @@
   <js-module src="www/www.min.js" name="QRScanner">
     <clobbers target="QRScanner" />
   </js-module>
+  <hook type="after_plugin_add" src="hooks/after_install.js" />
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="QRScanner">
