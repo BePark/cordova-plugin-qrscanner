@@ -1,3 +1,14 @@
+<a name="3.0.2"></a>
+## [3.0.2](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.1...3.0.2) (2019-09-30)
+
+
+### Bug Fixes
+
+* **android** uses-permission tag changed on plugin.xml
+* **ios:** 'openSettingsURLString' has been renamed to 'UIApplicationOpenSettingsURLString'
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/bitpay/cordova-plugin-qrscanner/compare/2.6.0...3.0.1) (2019-03-29)
 
