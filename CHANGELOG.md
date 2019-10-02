@@ -1,3 +1,13 @@
+<a name="3.0.4"></a>
+## [3.0.4](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.3...3.0.4) (2019-10-02)
+
+
+### Bug Fixes
+
+* **all** Commit validation removed
+
+
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.2...3.0.3) (2019-10-01)
 
