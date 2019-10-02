@@ -1,5 +1,7 @@
 var exec = require('child_process').exec;
 
+var deferral;
+
 const workingDir = 'plugins/cordova-plugin-qrscanner';
 
 var build = function() {
@@ -10,8 +12,10 @@ var build = function() {
             console.log('stdout: ' + stdout);
             console.log('stderr: ' + stderr);
             console.log('exec error: ' + error);
+            deferral.reject(err);
         }
         console.log('cordova-plugin-qrscanner BUILD SUCCESS');
+        deferral.resolve();
     });        
 }
 
@@ -23,10 +27,15 @@ var installDependencies = function() {
             console.log('stdout: ' + stdout);
             console.log('stderr: ' + stderr);
             console.log('exec error: ' + error);
+            deferral.reject(err);
         } else {
             build();
         }
     });
 };
 
-installDependencies();
+module.exports = function(ctx) {
+    deferral = ctx.requireCordovaModule('q').defer();
+    installDependencies();
+    return deferral.promise;
+};
