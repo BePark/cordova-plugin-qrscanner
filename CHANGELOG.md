@@ -1,3 +1,13 @@
+<a name="3.0.5"></a>
+## [3.0.5](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.4...3.0.5) (2019-10-02)
+
+
+### Bug Fixes
+
+* **all** Hook after_plugin_add changed to before_plugin_install
+
+
+
 <a name="3.0.4"></a>
 ## [3.0.4](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.3...3.0.4) (2019-10-02)
 
