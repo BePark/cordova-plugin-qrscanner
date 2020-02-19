@@ -1,4 +1,5 @@
 var exec = require('child_process').exec;
+var q = require('q');
 
 var deferral;
 
@@ -34,8 +35,8 @@ var installDependencies = function() {
     });
 };
 
-module.exports = function(ctx) {
-    deferral = ctx.requireCordovaModule('q').defer();
+module.exports = function() {
+    deferral = q.defer();
     installDependencies();
     return deferral.promise;
 };
