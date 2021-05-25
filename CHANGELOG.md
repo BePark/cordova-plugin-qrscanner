@@ -1,3 +1,10 @@
+<a name="3.0.6"></a>
+## [3.0.6](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.6...3.0.5) (2020-02-19)
+
+
+### Bug Fixes
+
+* **all** Fixed hook before_plugin_install so ti would work with android 9.
 <a name="3.0.5"></a>
 ## [3.0.5](https://github.com/bitpay/cordova-plugin-qrscanner/compare/3.0.4...3.0.5) (2019-10-02)
 
